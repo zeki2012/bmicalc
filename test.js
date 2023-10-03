@@ -22,4 +22,4 @@ if (bmi < 18) {
 } else {
   netice = 'Siz, 4-cü dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
 }
-document.getElementById('netice').innerHTML = ad + netice;
+document.getElementById('netice').innerHTML = ad + ', ' + netice;
