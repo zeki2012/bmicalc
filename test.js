@@ -1,3 +1,4 @@
+let ad = prompt('Adinizi yazin!')
 let boy = prompt('Boyunuz Neçədir ?');
 let kq = prompt('Neçə kiloqramsınız ?');
 let bmi = (kq / (boy * boy) * 10000);
@@ -5,7 +6,7 @@ let netice;
 
  
 if (bmi < 18) {
-  netice = 'Siz, çəki azlığından əziyyət çəkirsiniz.';
+  netice = 'Siz çəki azlığından əziyyət çəkirsiniz.';
 } else if (bmi < 20) {
   netice = 'Sizin, çəkiniz azdır. Lakin sağlamlıq üçün zərərli deyil.';
 } else if (bmi < 26) {
@@ -21,4 +22,4 @@ if (bmi < 18) {
 } else {
   netice = 'Siz, 4-cü dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
 }
-document.getElementById('netice').innerHTML = netice;
+document.getElementById('netice').innerHTML = ad + netice;
